@@ -5,10 +5,45 @@ Modify this docstring.
 
 import math
 import statistics
+import random
 
 list1 = [62, 37, 45, 39, 40, 41, 65, 44, 56, 46, 64, 35, 46, 22, 2, 65, 245, 22, 25, 78]
 listx = list(range(10))
 listy = [47, 77, 56, 77, 356, 4, 76, 56, 55, 67]
+
+# task4
+listA = [1, 2, 3, 4, 5]
+listB = ["apple", "banana", "cherry", "dates", "elderberry"]
+listC = [True, False, True, False, True]
+listD = [1.1, 2.2, 3.3, 4.4, 5.5]
+listE = [["a", "b"], ["c", "d"], ["e", "f"], ["g", "h"], ["i", "j"]]
+
+#list1
+# Using the `zip` function to combine the lists into tuples
+combined = list(zip(listA, listB))
+print(combined)
+
+# Output: [(1, 'A'), (2, 'B'), (3, 'C'), (4, 'D'), (5, 'E')]
+
+# Using `set` function to get unique elements
+unique_combined = set(combined)
+print(unique_combined)
+
+# Output: {(1, 'A'), (3, 'C'), (2, 'B'), (5, 'E'), (4, 'D')}
+
+# Using `len` function to get the length of the combined list
+length = len(unique_combined)
+print(length)
+
+# Output: 5
+
+# list 3
+
+# Generate a random sentence
+sentence = f"The {random.choice(listA)} {random.choice(listB)} {random.choice(listB)} {random.choice(listC)} {random.choice(list1)} the {random.choice(listC)} {random.choice(listC)}."
+print(sentence)
+
+
 
 mean = statistics.mean(list1)
 median = statistics.median(list1)
