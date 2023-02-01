@@ -42,3 +42,15 @@ print("After pop:", lst)
 # 10. pop the last item off the bottom of the list
 print("Popped last item:", lst.pop())
 print("After pop:", lst)
+
+
+
+if __name__ == "__main__":
+
+    print_to_file = True
+
+    if print_to_file:
+        # print to a file named about.txt
+        fn = "list4.txt"
+        with open(fn, "w") as f:
+            f.write((__file__))
