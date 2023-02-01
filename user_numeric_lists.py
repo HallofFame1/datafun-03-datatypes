@@ -66,30 +66,36 @@ print("Mode:", mode)
 stdev = stats.stdev(list1)
 print("Standard Deviation:", stdev)
 
-# Variance
-variance = stats.variance(list1)
-print("Variance:", variance)
 
+#LIST Using Python built in functions
+# Use the min() function to find the minimum value
+minimum = min(list1)
+print("The minimum value is:", minimum)
 
-#Correlation and prediction
+# Use the max() function to find the maximum value
+maximum = max(list1)
+print("The maximum value is:", maximum)
 
-correlation = stats.correlation(listx, listy)
-print("Correlation between listx and listy: ", correlation)
+# Use the len() function to find the length of the list
+length = len(list1)
+print("The length of the list is:", length)
 
-# Linear regression
-model = LinearRegression(listx, listy)
+# Use the sum() function to find the sum of the values in the list
+total = sum(list1)
+print("The sum of the values is:", total)
 
-# Slope
-m = model.slope
-print("Slope: ", m)
+# Use the average of the sum and the length to find the average of the values
+average = total / length
+print("The average of the values is:", average)
 
-# Intercept
-b = model.intercept
-print("Intercept: ", b)
+# Use the set() function to find the unique values in the list
+unique_values = set(list1)
+print("The unique values are:", unique_values)
 
-# Future time
-future_time = 15
+# Use the sorted() function to sort the values in the list
+sorted_values = sorted(list1)
+print("The sorted values are:", sorted_values)
 
-# Predict the y value
-y = m * future_time + b
-print("Predicted y value at time", future_time, ": ", y)
+# Use the sorted() function with reverse=True to sort the values in reverse order
+sorted_values_reverse = sorted(list1, reverse=True)
+print("The sorted values in reverse order are:", sorted_values_reverse)
