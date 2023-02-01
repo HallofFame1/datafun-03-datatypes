@@ -7,6 +7,7 @@ Modify this docstring.
 
 import math
 import statistics as stats
+from statistics import LinearRegression
 
 
 # define some functions
@@ -69,3 +70,26 @@ print("Standard Deviation:", stdev)
 variance = stats.variance(list1)
 print("Variance:", variance)
 
+
+#Correlation and prediction
+
+correlation = stats.correlation(listx, listy)
+print("Correlation between listx and listy: ", correlation)
+
+# Linear regression
+model = LinearRegression(listx, listy)
+
+# Slope
+m = model.slope
+print("Slope: ", m)
+
+# Intercept
+b = model.intercept
+print("Intercept: ", b)
+
+# Future time
+future_time = 15
+
+# Predict the y value
+y = m * future_time + b
+print("Predicted y value at time", future_time, ": ", y)
